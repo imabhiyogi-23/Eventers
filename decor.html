@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decor Catalog — Utsav</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Petit+Formal+Script&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a href="index.html" class="brand">Utsav <small>ADINATH VISUALS</small></a>
+    <nav class="links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="journey.html">Journey</a>
+      <a href="services.html">Services</a>
+      <a href="decor.html" class="active">Decor</a>
+      <a href="packages.html">Packages</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <a href="contact.html" class="btn btn-red nav-cta">Check Availability</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="kicker">Decor catalog</span>
+      <h1>Build a set that feels like <em>you</em>.</h1>
+      <p class="lede">Pick the pieces you want across every function. Your selections carry straight into the booking form with a running estimate.</p>
+      <div class="illus-wreath" aria-hidden="true">
+        <svg viewBox="0 0 200 130" fill="none">
+          <path d="M20 90 C40 40 160 40 180 90" stroke="var(--blush-deep)" stroke-width="1.5"/>
+          <g stroke="var(--red)" stroke-width="1.4">
+            <circle cx="30" cy="88" r="6" fill="none"/><circle cx="30" cy="88" r="1.4" fill="var(--pink)" stroke="none"/>
+            <circle cx="60" cy="58" r="6" fill="none"/><circle cx="60" cy="58" r="1.4" fill="var(--pink)" stroke="none"/>
+            <circle cx="100" cy="46" r="7" fill="none"/><circle cx="100" cy="46" r="1.6" fill="var(--red)" stroke="none"/>
+            <circle cx="140" cy="58" r="6" fill="none"/><circle cx="140" cy="58" r="1.4" fill="var(--pink)" stroke="none"/>
+            <circle cx="170" cy="88" r="6" fill="none"/><circle cx="170" cy="88" r="1.4" fill="var(--pink)" stroke="none"/>
+          </g>
+          <path d="M45 74c4-6 10-6 14 0M85 52c4-6 10-6 14 0M120 52c4-6 10-6 14 0M155 74c4-6 10-6 14 0" stroke="var(--blush-deep)" stroke-width="1.2"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+
+      <div class="decor-filters">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="mandap">Mandap &amp; Stage</button>
+        <button data-filter="lighting">Lighting</button>
+        <button data-filter="entrance">Entrance</button>
+        <button data-filter="ceremony">Ceremony</button>
+        <button data-filter="table">Table Decor</button>
+        <button data-filter="guest">Guest Experience</button>
+      </div>
+
+      <div class="decor-grid" id="decorGrid">
+
+        <label class="decor-card" data-category="mandap">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><path d="M12 3c1.5 2 1.5 4 0 5-1.5-1-1.5-3 0-5zM12 8c2.5 0 4.5 2 4.5 4.5S14.5 17 12 17s-4.5-2-4.5-4.5S9.5 8 12 8z"/><path d="M12 17v4"/></svg></div>
+          <h4>Floral Mandap Backdrop</h4>
+          <span class="cat">MANDAP &amp; STAGE</span>
+          <p class="item-desc">Full floral wall behind the mandap, built to your colour palette.</p>
+          <span class="price">₹45,000</span>
+          <span class="decor-check"><input type="checkbox" data-name="Floral Mandap Backdrop" data-price="45000"> Add to enquiry</span>
+        </label>
+
+        <label class="decor-card" data-category="lighting">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><path d="M3 14c3-6 15-6 18 0" /><circle cx="6" cy="15" r="0.8" fill="var(--red)"/><circle cx="12" cy="10.5" r="0.8" fill="var(--red)"/><circle cx="18" cy="15" r="0.8" fill="var(--red)"/></svg></div>
+          <h4>Fairy Light Canopy</h4>
+          <span class="cat">LIGHTING</span>
+          <p class="item-desc">Warm string-light ceiling for the sangeet or reception lawn.</p>
+          <span class="price">₹18,000</span>
+          <span class="decor-check"><input type="checkbox" data-name="Fairy Light Canopy" data-price="18000"> Add to enquiry</span>
+        </label>
+
+        <label class="decor-card" data-category="entrance">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><path d="M4 18c2-8 14-8 16 0"/><path d="M8 18v-2M12 18v-3M16 18v-2"/></svg></div>
+          <h4>Balloon Arch, Pink &amp; Red</h4>
+          <span class="cat">ENTRANCE</span>
+          <p class="item-desc">A bright, playful arch for haldi or sangeet entrances.</p>
+          <span class="price">₹9,500</span>
+          <span class="decor-check"><input type="checkbox" data-name="Balloon Arch (Pink & Red)" data-price="9500"> Add to enquiry</span>
+        </label>
+
+        <label class="decor-card" data-category="ceremony">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><path d="M4 20h16M6 20V10M18 20V10M6 10c0-3 12-3 12 0"/></svg></div>
+          <h4>Rose Petal Aisle Walk</h4>
+          <span class="cat">CEREMONY</span>
+          <p class="item-desc">Fresh rose petals lining the aisle for the baraat or the couple's walk.</p>
+          <span class="price">₹6,000</span>
+          <span class="decor-check"><input type="checkbox" data-name="Rose Petal Aisle Walk" data-price="6000"> Add to enquiry</span>
+        </label>
+
+        <label class="decor-card" data-category="mandap">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><rect x="4" y="5" width="16" height="14" rx="1"/><path d="M4 9h16"/></svg></div>
+          <h4>Draped Stage Backdrop</h4>
+          <span class="cat">MANDAP &amp; STAGE</span>
+          <p class="item-desc">Layered fabric drapes in your chosen shades, for stage or reception.</p>
+          <span class="price">₹32,000</span>
+          <span class="decor-check"><input type="checkbox" data-name="Draped Stage Backdrop" data-price="32000"> Add to enquiry</span>
+        </label>
+
+        <label class="decor-card" data-category="table">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><ellipse cx="12" cy="18" rx="7" ry="2"/><path d="M12 16V6M9 9l3-3 3 3"/></svg></div>
+          <h4>Centerpiece Set, 10 Tables</h4>
+          <span class="cat">TABLE DECOR</span>
+          <p class="item-desc">Floral or candle centerpieces sized for a 10-table reception layout.</p>
+          <span class="price">₹15,000</span>
+          <span class="decor-check"><input type="checkbox" data-name="Centerpiece Set (10 tables)" data-price="15000"> Add to enquiry</span>
+        </label>
+
+        <label class="decor-card" data-category="entrance">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><path d="M6 20V9a6 6 0 0112 0v11"/></svg></div>
+          <h4>Entrance Floral Arch</h4>
+          <span class="cat">ENTRANCE</span>
+          <p class="item-desc">A statement floral arch to welcome guests at the main venue gate.</p>
+          <span class="price">₹22,000</span>
+          <span class="decor-check"><input type="checkbox" data-name="Entrance Floral Arch" data-price="22000"> Add to enquiry</span>
+        </label>
+
+        <label class="decor-card" data-category="guest">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><rect x="5" y="4" width="14" height="16" rx="1"/><path d="M9 4v3h6V4"/></svg></div>
+          <h4>Photo Booth Frame</h4>
+          <span class="cat">GUEST EXPERIENCE</span>
+          <p class="item-desc">A styled photo frame corner with props, on brand with your palette.</p>
+          <span class="price">₹7,500</span>
+          <span class="decor-check"><input type="checkbox" data-name="Photo Booth Frame" data-price="7500"> Add to enquiry</span>
+        </label>
+
+        <label class="decor-card" data-category="lighting">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h4>Uplighting Package, 12 Points</h4>
+          <span class="cat">LIGHTING</span>
+          <p class="item-desc">Coloured uplights along walls and pillars to shift the mood after dusk.</p>
+          <span class="price">₹14,000</span>
+          <span class="decor-check"><input type="checkbox" data-name="Uplighting Package (12 points)" data-price="14000"> Add to enquiry</span>
+        </label>
+
+        <label class="decor-card" data-category="ceremony">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div>
+          <h4>Haldi Ceremony Set</h4>
+          <span class="cat">CEREMONY</span>
+          <p class="item-desc">Yellow marigold decor with low seating, tarp cover and washable backdrop.</p>
+          <span class="price">₹20,000</span>
+          <span class="decor-check"><input type="checkbox" data-name="Haldi Ceremony Set" data-price="20000"> Add to enquiry</span>
+        </label>
+
+        <label class="decor-card" data-category="table">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><path d="M4 6h16v4H4zM6 10v10h12V10"/></svg></div>
+          <h4>Welcome Gift Table Setup</h4>
+          <span class="cat">TABLE DECOR</span>
+          <p class="item-desc">A styled gift and return-favour table for the entrance or reception.</p>
+          <span class="price">₹8,500</span>
+          <span class="decor-check"><input type="checkbox" data-name="Welcome Gift Table Setup" data-price="8500"> Add to enquiry</span>
+        </label>
+
+        <label class="decor-card" data-category="guest">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6.5 5.5 5.5 0 0121.5 12c-2.5 4.5-9.5 9-9.5 9z"/></svg></div>
+          <h4>Guest Lounge Seating</h4>
+          <span class="cat">GUEST EXPERIENCE</span>
+          <p class="item-desc">A soft-seating lounge corner with cushions and low tables for elders and guests.</p>
+          <span class="price">₹26,000</span>
+          <span class="decor-check"><input type="checkbox" data-name="Guest Lounge Seating" data-price="26000"> Add to enquiry</span>
+        </label>
+
+      </div>
+
+      <div class="decor-summary">
+        <span class="count" id="decorCount">No decor items selected yet</span>
+        <span class="total" id="decorTotal"></span>
+      </div>
+      <div style="margin-top:22px;"><a href="contact.html" class="btn btn-red">Send this selection as an enquiry</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <a href="index.html" class="brand">Utsav</a>
+      <div class="foot-links">
+        <a href="journey.html">Journey</a>
+        <a href="services.html">Services</a>
+        <a href="decor.html">Decor</a>
+        <a href="packages.html">Packages</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Utsav by Adinath Visuals &amp; Momento Studio, Bengaluru</span>
+      <span>Pre-wedding · Wedding day · Post-wedding</span>
+    </div>
+  </div>
+<div class="footer-flourish" aria-hidden="true"><svg viewBox="0 0 100 18"><path d="M2 9h30M68 9h30" stroke="#f0dade" stroke-width="1.3"/><path d="M50 9c-3-6-11-6-11 0 0 6 8 6 11 0zM50 9c3-6 11-6 11 0 0 6-8 6-11 0z" fill="none" stroke="#e14d68" stroke-width="1.3"/></svg></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

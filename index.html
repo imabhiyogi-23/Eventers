@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Utsav — Wedding &amp; Event Bookings, Pre to Post</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Petit+Formal+Script&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a href="index.html" class="brand">Utsav <small>ADINATH VISUALS</small></a>
+    <nav class="links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="journey.html">Journey</a>
+      <a href="services.html">Services</a>
+      <a href="decor.html">Decor</a>
+      <a href="packages.html">Packages</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <a href="contact.html" class="btn btn-red nav-cta">Check Availability</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow-tag">Bengaluru · Full-service event bookings</span>
+        <h1>Every colour of <em>love</em>, planned end to end.</h1>
+        <p class="lede">Utsav plans, decorates, feeds, designs and prints every stage of your celebration — pre-wedding functions, the wedding day itself, and everything after — as one coordinated booking, <span class="script">with all our heart</span>.</p>
+        <div class="hero-cta">
+          <a href="contact.html" class="btn btn-red">Check Availability</a>
+          <a href="decor.html" class="btn btn-ghost">Browse Decor</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>180+</b><span>Events hosted</span></div>
+          <div class="stat"><b>9</b><span>Years planning weddings</span></div>
+          <div class="stat"><b>40+</b><span>Decor pieces on offer</span></div>
+        </div>
+      </div>
+      <div aria-hidden="true">
+        <svg viewBox="0 0 380 360" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="loveGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f2879a"/>
+              <stop offset="100%" stop-color="#a3122f"/>
+            </linearGradient>
+          </defs>
+          <path d="M120 260 C60 210 40 150 80 110 C110 80 155 85 175 120 C195 85 240 80 270 110 C310 150 290 210 230 260 C205 280 195 288 175 300 C155 288 145 280 120 260 Z"
+                fill="none" stroke="url(#loveGrad)" stroke-width="2.5"/>
+          <path d="M40 320 C110 300 260 300 330 320" stroke="#f0dade" stroke-width="1.5" fill="none"/>
+          <circle cx="90" cy="200" r="3" fill="#e14d68"/>
+          <circle cx="280" cy="190" r="3" fill="#e14d68"/>
+          <circle cx="175" cy="90" r="3.5" fill="#a3122f"/>
+          <text x="175" y="345" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#93707a" letter-spacing="1">PRE · WEDDING · POST</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 140 24"><path d="M2 12h50M88 12h50" stroke="#f0dade" stroke-width="1.5"/><path d="M70 12c-4-8-14-8-14 0 0 8 10 8 14 0zM70 12c4-8 14-8 14 0 0 8-10 8-14 0z" fill="none" stroke="#e14d68" stroke-width="1.5"/></svg></div>
+
+  <!-- JOURNEY TEASER -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">The full arc</span>
+        <h2>One booking, every stage.</h2>
+        <p>From the first haldi to the last thank-you card, the same team and the same design language carries through — nothing feels stitched together.</p>
+      </div>
+      <div class="services-grid">
+        <div class="svc-card">
+          <span class="phase-label" style="font-family:var(--mono); font-size:12px; color:var(--red); letter-spacing:.03em;">01 · PRE-WEDDING</span>
+          <h3 style="margin-top:10px;">Haldi, Mehendi &amp; Sangeet</h3>
+          <p>Themed decor, mehendi coordination and sangeet staging that set the palette for everything that follows.</p>
+        </div>
+        <div class="svc-card">
+          <span class="phase-label" style="font-family:var(--mono); font-size:12px; color:var(--red); letter-spacing:.03em;">02 · THE WEDDING DAY</span>
+          <h3 style="margin-top:10px;">Baraat, Ceremony &amp; Reception</h3>
+          <p>Mandap and stage design, full catering, and a coordination team on-ground from baraat to send-off.</p>
+        </div>
+        <div class="svc-card">
+          <span class="phase-label" style="font-family:var(--mono); font-size:12px; color:var(--red); letter-spacing:.03em;">03 · POST-WEDDING</span>
+          <h3 style="margin-top:10px;">Griha Pravesh &amp; Brunch</h3>
+          <p>A warmer, smaller setup for the home-coming and a closing thank-you brunch with the family.</p>
+        </div>
+      </div>
+      <div style="margin-top:30px;"><a href="journey.html" class="btn btn-ghost">See the full journey</a></div>
+    </div>
+  </section>
+
+  <!-- SERVICES TEASER -->
+  <section class="section alt">
+    <div class="wrap two-col">
+      <div>
+        <span class="kicker" style="font-family:var(--mono); font-size:12.5px; color:var(--red); letter-spacing:.03em; display:block; margin-bottom:12px;">What's included</span>
+        <h2 style="font-size:clamp(28px,3.6vw,38px);">Five crafts, held together by one hand.</h2>
+        <p style="margin-top:16px; color:var(--muted); font-size:17.5px;">Decor, catering, design and printing, day-of coordination, and photo &amp; film with Momento Studio — all briefed from the same mood board, so nothing feels mismatched.</p>
+        <div class="pill-list">
+          <span>Decoration &amp; staging</span>
+          <span>Food &amp; catering</span>
+          <span>Design &amp; printing</span>
+          <span>Event coordination</span>
+          <span>Photo &amp; film</span>
+        </div>
+        <div style="margin-top:26px;"><a href="services.html" class="btn btn-red">Explore services</a></div>
+      </div>
+      <div>
+        <svg viewBox="0 0 320 300" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="160" cy="150" r="110" fill="none" stroke="#f6d3d8" stroke-width="1.5"/>
+          <circle cx="160" cy="150" r="70" fill="none" stroke="#e14d68" stroke-width="1.5" stroke-dasharray="4 6"/>
+          <circle cx="160" cy="80" r="4" fill="#a3122f"/>
+          <circle cx="228" cy="150" r="4" fill="#e14d68"/>
+          <circle cx="160" cy="220" r="4" fill="#a3122f"/>
+          <circle cx="92" cy="150" r="4" fill="#e14d68"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- DECOR TEASER -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Decor catalog</span>
+        <h2>Build a set that feels like you.</h2>
+        <p>Floral mandaps, fairy-light canopies, rose petal aisles and more — pick your pieces and see the estimate update as you go.</p>
+      </div>
+      <div style="margin-top:8px;"><a href="decor.html" class="btn btn-ghost">Browse the full catalog</a></div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section alt" style="text-align:center; padding:64px 0;">
+    <div class="wrap">
+      <h2 style="font-size:clamp(26px,3.4vw,36px);">Ready to start planning?</h2>
+      <p style="margin-top:14px; color:var(--muted); font-size:17.5px;">Tell us your date and we'll come back with availability within a day.</p>
+      <div style="margin-top:26px;"><a href="contact.html" class="btn btn-red">Check Availability</a></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <a href="index.html" class="brand">Utsav</a>
+      <div class="foot-links">
+        <a href="journey.html">Journey</a>
+        <a href="services.html">Services</a>
+        <a href="decor.html">Decor</a>
+        <a href="packages.html">Packages</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Utsav by Adinath Visuals &amp; Momento Studio, Bengaluru</span>
+      <span>Pre-wedding · Wedding day · Post-wedding</span>
+    </div>
+  </div>
+<div class="footer-flourish" aria-hidden="true"><svg viewBox="0 0 100 18"><path d="M2 9h30M68 9h30" stroke="#f0dade" stroke-width="1.3"/><path d="M50 9c-3-6-11-6-11 0 0 6 8 6 11 0zM50 9c3-6 11-6 11 0 0 6-8 6-11 0z" fill="none" stroke="#e14d68" stroke-width="1.3"/></svg></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
