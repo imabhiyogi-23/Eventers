@@ -13,6 +13,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
+  // ===== Mobile sticky action bar (call / whatsapp / book) =====
+  const bar = document.createElement('div');
+  bar.className = 'mobile-actionbar';
+  bar.innerHTML = `
+    <a href="tel:+918217686375" class="call">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.5 2.1L8 9.7a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.8.5 2.7.6a2 2 0 011.7 2z"/></svg>
+      Call
+    </a>
+    <a href="https://wa.me/918217686375" target="_blank" rel="noopener" class="whatsapp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.35a9.87 9.87 0 004.62 1.15h.01c5.46 0 9.9-4.45 9.9-9.9C21.95 6.45 17.5 2 12.04 2z"/></svg>
+      WhatsApp
+    </a>
+    <a href="contact.html#bookingForm" class="book" id="mobileBookLink">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6.5 5.5 5.5 0 0121.5 12c-2.5 4.5-9.5 9-9.5 9z"/></svg>
+      Book
+    </a>`;
+  document.body.appendChild(bar);
+
+  // On the contact page itself, point the bar's Book link at the form instead of reloading the page
+  if(document.getElementById('bookingForm')){
+    const bookLink = document.getElementById('mobileBookLink');
+    if(bookLink) bookLink.setAttribute('href', '#bookingForm');
+  }
+
   // ===== Decor catalog (decor.html) =====
   const decorGrid = document.getElementById('decorGrid');
   if(decorGrid){
